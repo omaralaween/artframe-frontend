@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { IoClose } from "react-icons/io5"; // close icon
+import { IoClose } from "react-icons/io5";
 import placeholder from "../assets/landscape-placeholder-svgrepo-com.svg";
 import "../style/components/CommentSection.css";
 import axios from "axios";
