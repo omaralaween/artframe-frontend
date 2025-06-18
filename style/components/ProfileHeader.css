@@ -1,0 +1,128 @@
+/* fix the colors */
+
+.profile-header {
+  background-color: #F6F1E7;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Banner */
+.profile-header__banner img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Profile Image & Info */
+.profile-header__content {
+  padding: 2rem 4rem;
+  position: relative;
+}
+
+.profile-header__avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 25%;
+  border: 4px solid #F6F1E7;
+  object-fit: cover;
+  position: absolute;
+  top: -45px;
+  left: 4rem;
+  background-color: white;
+}
+
+/* Content to the right of profile picture */
+.profile-header__main {
+    margin-top: 0.7rem;
+  margin-left: 2rem;
+}
+
+/* Top Row: Username + Buttons */
+.profile-header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-header__username {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Buttons */
+.profile-header__buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1.4rem;
+  font-size: 0.95rem;
+  border-radius: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn.outline {
+  background-color: transparent;
+  border: 1.5px solid #D4AF7F;
+  color: #3D3D3D;
+}
+
+.btn.outline:hover {
+  background-color: #f0e4d2;
+}
+
+.btn.solid {
+  background-color: #D4AF7F;
+  border: none;
+  color: #3D3D3D;
+}
+
+.btn.solid:hover {
+  background-color: #c89c64;
+}
+
+/* Stats Section */
+.profile-header__stats {
+  display: flex;
+  gap: 4rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.profile-header__stats-group {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.stat-count {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #3D3D3D;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  margin: 0;
+  color: #7D7461;
+}
+
+/* Bio */
+.profile-header__bio {
+  margin-top: 1.5rem;
+}
+
+.bio-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  color: #3D3D3D;
+}
+
+.bio-text {
+  font-size: 0.9rem;
+  color: #373736;
+}

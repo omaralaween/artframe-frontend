@@ -1,0 +1,137 @@
+/* Fonts and Reset */
+body {
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove underline from all links globally */
+a {
+  text-decoration: none;
+}
+
+
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DDD8CE; /* Light beige background */
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #A58C73;
+}
+
+/* Left: Logo */
+.navbar__logo {
+  flex: 1;
+}
+
+.navbar__brand-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* space between logo and text */
+  text-decoration: none;
+}
+
+.navbar__logo-img {
+  height: 28px; /* adjust to match design */
+  width: auto;
+}
+
+.navbar__brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #CFAA7A;
+  margin: 0;
+}
+
+
+/* Center: Links */
+.navbar__menu {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+.navbar__links {
+  
+  display: flex;
+  list-style: none;
+  gap: 5rem;
+  margin: 0;
+  padding: 0;
+}
+.navbar__links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #3D3D3D;
+  font-size: 14px;
+}
+
+/* Right: Sign Up Button */
+.navbar__signup {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+
+}
+.signup-btn {
+  justify-content: center;
+  background-color: #D4AF7F;
+  color: #3D3D3D;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 15px;
+  font-weight: 550;
+  font-family: 'Work Sans', sans-serif;
+  cursor: pointer;
+  display: flex;
+  height: 2.5rem;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 12px;
+}
+
+.signup-icon {
+  font-size: 1.1rem;
+}
+
+.signup-btn:hover {
+  background-color: #c8a370;
+}
+
+/* Logged-in: Avatar + Logout */
+.navbar__profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar__avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+
+.navbar__avatar:hover {
+  box-shadow: 0 0 0 2px #D4AF7F;
+}
+
+.logout-btn {
+  background-color: transparent;
+  color: #3D3D3D;
+  border: 1px solid #B68E63;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Work Sans', sans-serif;
+  transition: background-color 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #f0e4d2;
+}

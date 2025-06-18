@@ -1,0 +1,116 @@
+.edit-profile-page {
+  background-color: #f6f1e7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit-profile__banner {
+  width: 100%;
+  position: relative;
+}
+
+.banner-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Edit Buttons */
+.edit-icon {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.4rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.edit-banner {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  z-index: 2;
+}
+
+.avatar-wrapper {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.edit-profile__avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #f6f1e7;
+}
+
+.edit-avatar {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(20%, -10%);
+  z-index: 2;
+}
+
+/* Form Styling */
+.edit-profile__form {
+  margin-top: 60px;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group {
+  width: 36rem;
+  margin-bottom: 1.2rem;
+}
+
+input,
+textarea {
+    width: 34rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #bfb7ad;
+  border-radius: 999px;
+  background-color: #fefefe;
+  font-family: "Inter", sans-serif;
+}
+
+textarea {
+  border-radius: 16px;
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Submit Button */
+.edit-profile__submit {
+    width: fit-content;
+  background-color: #d4af7f;
+  color: #3d3d3d;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-profile__submit:hover {
+  background-color: #c89c64;
+}
+

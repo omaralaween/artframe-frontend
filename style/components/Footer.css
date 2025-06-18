@@ -1,0 +1,14 @@
+.footer {
+  background-color: #F6F1E7; /* match page background if needed */
+  padding: 1rem 1rem;
+  text-align: center;
+  border: none;
+  border-top: 1px solid #A58C73;
+}
+
+.footer__text {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  color: #7D7461;
+  margin: 0;
+}

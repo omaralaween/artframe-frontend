@@ -1,0 +1,38 @@
+/* ───────────────── Root palette update ─────────────────────────── */
+:root {
+  --clr-fill:     #DDD8CE;
+  --clr-button:   #D4AF7F;
+  --clr-text:     #3D3D3D;
+  --clr-subtext:  #7D7461;   /* NEW → subtitle colour */
+}
+
+/* ───────────────── Hero section ────────────────────────────────── */
+.hero {
+                    /* space below navbar            */
+  padding: 0 2.5rem;
+  padding-top: 40px;                 /* horizontal gutter             */
+  padding-bottom: 40px;
+  background-color: #DDD8CE;  
+}
+
+.hero__title {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;                  /* “semiBold” feel               */
+  font-size: 51px;
+  color: var(--clr-text);
+  margin: 0 0 0.75rem 0;             /* bottom space before subtitle  */
+}
+
+.hero__subtitle {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--clr-subtext);
+  max-width: 60ch;                   /* comfy line-length             */
+  margin: 0;
+}
+
+/* (optional) tweak for very small screens */
+@media (max-width: 480px) {
+  .hero__title { font-size: 2rem; }
+}

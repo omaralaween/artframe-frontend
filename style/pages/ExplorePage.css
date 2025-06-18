@@ -1,0 +1,26 @@
+.explore-page {
+  background-color: #F6F1E7;
+  min-height: 100vh;
+}
+
+/* Art cards layout */
+.explore-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* exactly 3 cards per row */
+  gap: 2rem;
+  padding: 2rem 4rem;
+  justify-items: center;
+}
+
+@media (max-width: 900px) {
+  .explore-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .explore-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+

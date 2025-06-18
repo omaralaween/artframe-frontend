@@ -1,0 +1,46 @@
+/* fix the colors */
+
+.tab-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DDD8CE;
+  border-top: 1px solid #A58C73;
+  border-bottom: 1px solid #A58C73;
+  padding: 0.5rem 1rem;
+  gap: 2.5rem;
+}
+
+.tab-nav__btn {
+  position: relative;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  background: none;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #373736;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding-bottom: 0.4rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.tab-nav__btn:hover {
+  color: #000;
+}
+
+.tab-nav__btn.active {
+  border-bottom: 3px solid #D4AF7F;
+}
+
+.tab-nav__badge {
+  background-color: #2C2C2C;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+}
